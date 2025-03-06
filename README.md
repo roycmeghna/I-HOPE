@@ -1,6 +1,6 @@
 # College Student Mental Health Prediction
 
-This repository implements a hierarchical, interpretable machine learning framework to predict mental health status (PHQ-4 categories) using behavioral data. The code is organized into multiple modules that mirror the methodology described in the associated paper.
+This repository implements a hierarchical, interpretable machine learning framework to predict mental health status (PHQ-4 categories) using behavioral data from the CES dataset (https://www.kaggle.com/datasets/subigyanepal/college-experience-dataset). The code is organized into multiple modules that mirror the methodology described in the associated paper.
 
 ## Repository Structure
 
