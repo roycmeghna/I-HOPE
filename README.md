@@ -1,4 +1,4 @@
-# **I-HOPE** — **_I_*nterpretable Hierarchical m**_O_*del for **_P_*ersonalized m**_E_*ntal Health Prediction
+# **I-HOPE** — an Interpretable Hierarchical mOdel for Personalized mEntal Health Prediction
 
 
 
