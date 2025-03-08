@@ -1,13 +1,12 @@
 # College Student Mental Health Prediction
 
-This repository implements a hierarchical, interpretable machine learning framework to predict mental health status (PHQ-4 categories) using behavioral data from the CES dataset (https://www.kaggle.com/datasets/subigyanepal/college-experience-dataset). The code is organized into multiple modules that mirror the methodology described in the associated paper.
-
+This repository contains code for **I-HOPE** — **_I_** nterpretable **_H_** ierarchical m **_O_** del for **_P_** ersonalized m **_E_** ntal Health Prediction. I-HOPE is a mental health prediction system that employs a two-stage hierarchical model to map raw behavioral features to mental health status (PHQ-4 categories). It does so by leveraging five defined behavioral categories, referred to as *interaction labels*. This work utilizes the CES dataset(https://www.kaggle.com/datasets/subigyanepal/college-experience-dataset).
 
 ## Overview
 
 The project follows a two-stage hierarchical model:
 
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/aae9cc55-3b38-4076-89aa-022b8de2da52" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/aae9cc55-3b38-4076-89aa-022b8de2da52" />
 
 1. **Stage 1: Feature Mapping to Interaction Labels**  
    35 chosen raw behavioral features are transformed into five interaction labels:  
