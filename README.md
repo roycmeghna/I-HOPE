@@ -1,10 +1,10 @@
-# **I-HOPE** — **_I_** nterpretable **_H_** ierarchical m **_O_** del for **_P_** ersonalized m **_E_** ntal Health Prediction
+# **I-HOPE** — **I**nterpretable **H**ierarchical m**O**del for **P**ersonalized m**E**ntal Health Prediction
 
-This repository contains code for **I-HOPE** — **_I_** nterpretable **_H_** ierarchical m **_O_** del for **_P_** ersonalized m **_E_** ntal Health Prediction. I-HOPE is a mental health prediction system that employs a two-stage hierarchical model to map raw behavioral features to mental health status (PHQ-4 categories). It does so by leveraging five defined behavioral categories, referred to as *interaction labels*. This work utilizes the CES dataset(https://www.kaggle.com/datasets/subigyanepal/college-experience-dataset).
+This repository contains code for **I-HOPE** — **I**nterpretable **H**ierarchical m**O**del for **P**ersonalized m**E**ntal Health Prediction. I-HOPE is a mental health prediction system that employs a two-stage hierarchical model to map raw behavioral features to mental health status (PHQ-4 categories). It does so by leveraging five defined behavioral categories, referred to as *interaction labels*. This work utilizes the CES dataset(https://www.kaggle.com/datasets/subigyanepal/college-experience-dataset).
 
 ## Overview
 
-The project follows a two-stage hierarchical model:
+The project follows a two-stage hierarchical model as shown below:
 
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/aae9cc55-3b38-4076-89aa-022b8de2da52" />
 
