@@ -6,8 +6,8 @@ This repository implements a hierarchical, interpretable machine learning framew
 ## Overview
 
 The project follows a two-stage hierarchical model:
-<img width="1097" alt="image" src="https://github.com/user-attachments/assets/8c223fed-f1dc-486f-a012-505c57fe11a4" />
 
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/1ad34876-5219-47cc-b57b-aadac5ead036" />
 
 
 1. **Stage 1: Feature Mapping to Interaction Labels**  
