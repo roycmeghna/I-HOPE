@@ -144,4 +144,8 @@ environment.yml
 
 
   ## Citing
-
+Meghna Roy Chowdhury, Wei Xuan, Shreyas Sen, Yixue Zhao, and Yi
+Ding. 2025. Predicting and Understanding College Student Mental Health
+with Interpretable Machine Learning. In ACM/IEEE International Conference
+on Connected Health: Applications, Systems and Engineering Technologies
+(CHASE ’25), June 24–26, 2025, New York, NY, USA. ACM, New York
