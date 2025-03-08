@@ -19,7 +19,6 @@ The project follows a two-stage hierarchical model:
    This is achieved by data cleaning, feature engineering, clustering (using KMeans), and personalized feature importance analysis (using Random Forests).
 
 ### Selected Features and Relevant Labels
-### Selected Features and Relevant Labels
 
 | **#** | **Feature Name** | **Labels** |
 |----|-----------------|-----------|
