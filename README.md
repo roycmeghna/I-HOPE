@@ -6,18 +6,56 @@ This repository implements a hierarchical, interpretable machine learning framew
 ## Overview
 
 The project follows a two-stage hierarchical model:
-
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/1ad34876-5219-47cc-b57b-aadac5ead036" />
-
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/aae9cc55-3b38-4076-89aa-022b8de2da52" />
 
 1. **Stage 1: Feature Mapping to Interaction Labels**  
-   Raw behavioral features are transformed into five interaction labels:  
+   35 chosen raw behavioral features are transformed into five interaction labels:  
    - **Leisure**
    - **Me Time**
    - **Phone Time**
    - **Sleep Time**
    - **Social Time**  
    This is achieved by data cleaning, feature engineering, clustering (using KMeans), and personalized feature importance analysis (using Random Forests).
+
+### Selected Features and Relevant Labels
+
+| **Feature Name** | **Relevant Labels** [0: Leisure, 1: MeTime, 2: Phone, 3: Sleep, 4: SocialInt] |
+|-----------------|----------------------------------------------|
+| act_on_bike_ep_0 | [0,1] |
+| act_on_foot_ep_0 | [0,1,4] |
+| act_running_ep_0 | [0,1] |
+| act_still_ep_0 | [1,3] |
+| act_walking_ep_0 | [0,1,4] |
+| audio_convo_duration_ep_0 | [0,2,4] |
+| (call_in_num_ep_0 + call_out_num_ep_0) / (call_in_duration_ep_0 + call_out_duration_ep_0) | [0,2] |
+| loc_food_audio_voice | [4] |
+| loc_home_audio_voice | [1,2,3] |
+| loc_social_audio_voice | [0,2,4] |
+| loc_other_dorm_audio_voice | [0,4] |
+| loc_self_dorm_audio_voice | [1,2] |
+| loc_study_audio_voice | [1,4] |
+| loc_food_convo_duration | [4] |
+| loc_home_convo_duration | [1,2,3] |
+| loc_other_dorm_convo_duration | [4,0] |
+| loc_social_convo_duration | [4,0] |
+| loc_study_convo_duration | [4,1] |
+| loc_self_dorm_convo_duration | [1,2] |
+| loc_home_dur | [1,3] |
+| loc_leisure_dur | [0,4] |
+| loc_other_dorm_dur | [4] |
+| loc_self_dorm_dur | [1,3] |
+| loc_social_dur | [4] |
+| loc_study_dur | [1,4] |
+| loc_workout_dur | [0,1] |
+| loc_home_unlock_num / loc_home_unlock_duration | [0,1,2] |
+| loc_other_dorm_unlock_num / loc_other_dorm_unlock_duration | [0,4,2] |
+| loc_self_dorm_unlock_num / loc_self_dorm_unlock_duration | [1,2] |
+| loc_social_unlock_num / loc_social_unlock_duration | [2,4] |
+| loc_study_unlock_num / loc_study_unlock_duration | [1,2,3] |
+| sleep_duration | [3] |
+| sleep_end - sleep_start | [3] |
+| unlock_num_ep_0 / unlock_duration_ep_0 | [2] |
+| sleep_heathkit_dur | [3] |
 
 2. **Stage 2: Prediction Using Interaction Labels**  
    The computed interaction label scores are then used as inputs to build personalized neural network models to predict the PHQ-4 mental health categories.
