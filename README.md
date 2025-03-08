@@ -2,26 +2,13 @@
 
 This repository implements a hierarchical, interpretable machine learning framework to predict mental health status (PHQ-4 categories) using behavioral data from the CES dataset (https://www.kaggle.com/datasets/subigyanepal/college-experience-dataset). The code is organized into multiple modules that mirror the methodology described in the associated paper.
 
-## Repository Structure
-
-```plaintext
-project/
-├── main.py                     # Main entry point: loads data, processes domains, and builds models
-├── config.py                   # Configuration file (e.g., file paths, constants)
-├── data_loader.py              # Module to load and merge raw datasets and add PHQ-4 categorization
-├── feature_extractor.py        # Module to extract feature names from the labeled CSV file
-├── feature_engineering.py      # Module for cleaning data and adding calculated columns
-├── domain_processor.py         # Module to process each interaction label (Leisure, Me Time, Phone Time, Sleep Time, Social Time)
-├── model_builder.py            # Module for building and training personalized neural network models per UID
-├── utils.py                    # Utility functions (e.g., YAML configuration loader)
-├── environment.yml             # Conda environment file listing required packages and Python version
-└── README.md                   # This documentation file
-
-```
 
 ## Overview
 
 The project follows a two-stage hierarchical model:
+<img width="1097" alt="image" src="https://github.com/user-attachments/assets/8c223fed-f1dc-486f-a012-505c57fe11a4" />
+
+
 
 1. **Stage 1: Feature Mapping to Interaction Labels**  
    Raw behavioral features are transformed into five interaction labels:  
@@ -34,6 +21,7 @@ The project follows a two-stage hierarchical model:
 
 2. **Stage 2: Prediction Using Interaction Labels**  
    The computed interaction label scores are then used as inputs to build personalized neural network models to predict the PHQ-4 mental health categories.
+
 
 ## Setup Instructions
 
@@ -55,6 +43,25 @@ The project follows a two-stage hierarchical model:
   ```
   python main.py
   ```
+
+
+## Repository Structure
+
+```plaintext
+project/
+├── main.py                     # Main entry point: loads data, processes domains, and builds models
+├── config.py                   # Configuration file (e.g., file paths, constants)
+├── data_loader.py              # Module to load and merge raw datasets and add PHQ-4 categorization
+├── feature_extractor.py        # Module to extract feature names from the labeled CSV file
+├── feature_engineering.py      # Module for cleaning data and adding calculated columns
+├── domain_processor.py         # Module to process each interaction label (Leisure, Me Time, Phone Time, Sleep Time, Social Time)
+├── model_builder.py            # Module for building and training personalized neural network models per UID
+├── utils.py                    # Utility functions (e.g., YAML configuration loader)
+├── environment.yml             # Conda environment file listing required packages and Python version
+└── README.md                   # This documentation file
+
+```
+
 
 
 ## Module description 
