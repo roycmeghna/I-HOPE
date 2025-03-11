@@ -19,8 +19,7 @@ The project follows a two-stage hierarchical model as shown below:
 
 ### Selected Features and Relevant Labels
 
-| **#** | **Feature Name** | **Relevant Labels
-[0: Leisure, 1: MeTime, 2: Phone, 3: Sleep , 4: SocialInt]** |
+| **#** | **Feature Name** | **Relevant Labels[0: Leisure, 1: MeTime, 2: Phone, 3: Sleep , 4: SocialInt]** |
 |----|-----------------|-----------|
 | 1  | act_on_bike_ep_0 | [0,1] |
 | 2  | act_on_foot_ep_0 | [0,1,4] |
