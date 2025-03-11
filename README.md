@@ -66,8 +66,8 @@ The project follows a two-stage hierarchical model as shown below:
 
 1. **Clone the Repository:**
   ```bash
-   git clone https://github.com/roycmeghna/CHASE_2025_Meghna.git
-   cd CHASE_2025_Meghna
+   git clone https://github.com/roycmeghna/I-HOPE.git
+   cd I-HOPE
   ```
 
 2. Create the conda environment:
