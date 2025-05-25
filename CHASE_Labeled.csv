@@ -1,0 +1,74 @@
+﻿Variable,Description,"Relevant Labels
+[0: Leisure, 1: MeTime, 2: Phone, 3: Sleep , 4: SocialInt]",Labels,Leisure,Me Time,Phone ,Sleep,Social Interaction
+uid,Unique user ID,,,,,,,
+is_ios,Boolean indicating whether the user is an iOS user (1) or an Android user (0),,,,,,,
+day,Date in the format YYYYMMDD,,,,,,,
+act_on_bike_ep_0,Activity duration on bike,"
+2. Leisure
+3. Me Time","[0,1]",,,,,
+act_on_foot_ep_0,Activity duration on foot ,"
+2. Leisure
+3. Me Time","[0,1,4]",,,,,
+act_running_ep_0,Activity duration running,"
+2. Leisure
+3. Me Time","[0,1]",,,,,
+act_still_ep_0,Activity duration still (no movement),"1. Me Time 
+2. Sleep Time","[1,3]",,,,,
+act_walking_ep_0,Activity duration walking ,"
+2. Leisure
+3. Me Time","[0,1,4]",,,,,
+audio_convo_duration_ep_0,Duration of detected conversations,"1. Social Interaction
+2. Leisure
+3. Phone","[0,2,4]",,,,,
+(call_in_num_ep_0+call_out_num_ep_0) /(call_in_duration_ep_0+call_out_duration_ep_0),No of inc calls/Duration of incoming call,"1. Phone Time.
+Leisure","[0,2]",,,,,
+loc_food_audio_voice,"Average ratio of detection of voice to number of inferences made during the period at food places. This answers, for every hour on average the user was at a food place, how much percentage of it had voice present (as opposed to noise). ",2. Social Interaction,[4],,,,,
+loc_home_audio_voice,"Average ratio of detection of voice to number of inferences made during the period at home. This answers, for every hour on average the user was at home, how much percentage of it had voice present (as opposed to noise). ","1. Me Time 
+2. Sleep Time","[1,2,3]",,,,,
+loc_social_audio_voice,"Average ratio of detection of voice to number of inferences made during the period at social places. This answers, for every hour on average the user was at a social place, how much percentage of it had voice present (as opposed to noise). ","1. Social Interaction
+2. Leisure","[0,2,4]",,,,,
+loc_other_dorm_audio_voice,"Average ratio of detection of voice to number of inferences made during the period at others' dorm. This answers, for every hour on average the user was at others' dorm location, how much percentage of it had voice present (as opposed to noise). ","1. Social Interaction
+2. Leisure","[0,4]",,,,,
+loc_self_dorm_audio_voice,"Average ratio of detection of voice to number of inferences made during the period at own dorm. This answers, for every hour on average the user was at their own dorm, how much percentage of it had voice present (as opposed to noise). ","1. Me time
+2. Phone Time","[1,2]",,,,,
+loc_study_audio_voice,"Average ratio of detection of voice to number of inferences made during the period at study places. This answers, for every hour on average the user was at a study place, how much percentage of it had voice present (as opposed to noise). ","1. Me Time
+2. Social Interaction","[1,4]",,,,,
+loc_food_convo_duration,"This metric represents the average duration of detected conversations within each hour a user spends at a food location. The scale ranges from 0 to 60 minutes; for example, a score of 40 indicates that, on average, conversations were detected for 40 minutes of each hour spent at the food place.",Social Interaction,[4],,,,,
+loc_home_convo_duration,"This metric represents the average duration of detected conversations within each hour a user spends at home. The scale ranges from 0 to 60 minutes; for example, a score of 40 indicates that, on average, conversations were detected for 40 minutes of each hour spent at home.","1. Phone Time
+2. Me time
+3. Sleep time","[1,2,3]",,,,,
+loc_other_dorm_convo_duration,"This metric represents the average duration of detected conversations within each hour a user spends at others' dorm location. The scale ranges from 0 to 60 minutes; for example, a score of 40 indicates that, on average, conversations were detected for 40 minutes of each hour spent at others' dorm location.","1. Social Interaction
+2. Leisure
+3. Phone","[4,0]",,,,,
+loc_social_convo_duration,"This metric represents the average duration of detected conversations within each hour a user spends at a social location. The scale ranges from 0 to 60 minutes; for example, a score of 40 indicates that, on average, conversations were detected for 40 minutes of each hour spent at the social location.","1. Social Interaction
+2. Leisure","[4,0]",,,,,
+loc_study_convo_duration,"This metric represents the average duration of detected conversations within each hour a user spends at a study location. The scale ranges from 0 to 60 minutes; for example, a score of 40 indicates that, on average, conversations were detected for 40 minutes of each hour spent at the study location.","1. Social Interaction
+2. Me time","[4,1]",,,,,
+loc_self_dorm_convo_duration,"This metric represents the average duration of detected conversations within each hour a user spends at dorm. The scale ranges from 0 to 60 minutes; for example, a score of 40 indicates that, on average, conversations were detected for 40 minutes of each hour spent at the dorm.","1. Me Time
+2. Sleep Time","[1,2]",,,,,
+loc_home_dur,"Time spent at home (when in residence, it refers to dorm and when not in residence it is the significant place as identified by our algorithm during the night i.e., potentially their home)","1. Me Time
+2. Sleep Time",[1.3],,,,,
+loc_leisure_dur,"Time spent at leisure places (for example, local grocery store, CVS, common ground/green etc)","1. Nature Time 
+2. Social Interaction","[0,4]",,,,,
+loc_other_dorm_dur,Time spent at others' dorms,Social Interaction,[4],,,,,
+loc_self_dorm_dur,Time spent at own dorm,"1. Me Time
+2. Sleep Time","[1,3]",,,,,
+loc_social_dur,Time spent at social locations, Social Interaction,[4],,,,,
+loc_study_dur,Time spent at study locations,Me Time,"[1,4]",,,,,
+loc_workout_dur,"Time spent at workout locations (sport center, football field, gym etc.)","1.Nature Time 
+2. Me time","[0,1]",,,,,
+loc_home_unlock_num/loc_home_unlock_duration,"Average amount of time that a user uses the phone in unlocked state (i.e., total phone usage duration) within each hour spent at home. The value can range from 0 to 60 minutes. A value of 40, for instance, indicates that, on average, the user was using phone for 40 minutes of every hour they were at home.","1. Me time
+2. Phone Time","[0,1,2]",,,,,
+loc_other_dorm_unlock_num/ loc_other_dorm_unlock_duration,"Average amount of time that a user uses the phone in unlocked state (i.e., total phone usage duration) within each hour spent at others' dorm. The value can range from 0 to 60 minutes. A value of 40, for instance, indicates that, on average, the user was using phone for 40 minutes of every hour they were at others' dorm.","1. Social Interaction
+2. Phone Time","[0,4,2]",,,,,
+loc_self_dorm_unlock_num/ loc_self_dorm_unlock_duration,"Average amount of time that a user uses the phone in unlocked state (i.e., total phone usage duration) within each hour spent at their own dorm. The value can range from 0 to 60 minutes. A value of 40, for instance, indicates that, on average, the user was using phone for 40 minutes of every hour they were at their own dorm.","1. Me time
+2. Phone Time","[1,2]",,,,,
+loc_social_unlock_num/ loc_social_unlock_duration,"Average amount of time that a user uses the phone in unlocked state (i.e., total phone usage duration) within each hour spent at a social location. The value can range from 0 to 60 minutes. A value of 40, for instance, indicates that, on average, the user was using phone for 40 minutes of every hour they were at a social location. ","1. Social Interaction
+2. Phone Time","[2,4]",,,,,
+loc_study_unlock_num/loc_study_unlock_duration,"Average amount of time that a user uses the phone in unlocked state (i.e., total phone usage duration) within each hour spent at a study location. The value can range from 0 to 60 minutes. A value of 40, for instance, indicates that, on average, the user was using phone for 40 minutes of every hour they were at a study location. ","1. Me time
+2. Phone Time
+3. Social Interaction","[1,2,3]",,,,,
+sleep_duration,Sleep duration (based on our predictive model https://dl.acm.org/doi/10.4108/icst.pervasivehealth.2013.252148 ),1. Sleep Time,[3],,,,,
+sleep_end - sleep_start,Sleep end time,Sleep Time,[3],,,,,
+unlock_num_ep_0/ unlock_duration_ep_0,"Amount of time that a user uses the phone in unlocked state (i.e., total phone usage duration)",Phone Time,[2],,,,,
+sleep_heathkit_dur,Sleep duration (based on iOS health kit),Sleep Time,[3],,,,,
