@@ -13,7 +13,7 @@ The project follows a two-stage hierarchical model as shown below:
    - **Leisure**
    - **Me Time**
    - **Phone Time**
-   - **Sleep Time**
+   - **Sleep**
    - **Social Time**  
    This is achieved by data cleaning, feature engineering, clustering (using KMeans), and personalized feature importance analysis (using Random Forests).
 
@@ -78,7 +78,7 @@ The project follows a two-stage hierarchical model as shown below:
  
 
 
-2. Run the main script:
+3. Run the main script:
   ```
   python main.py
   ```
