@@ -62,7 +62,7 @@ The project follows a two-stage hierarchical model as shown below:
    The computed interaction label scores are then used as inputs to build personalized neural network models to predict the PHQ-4 mental health categories.
 
 ## Files
-   1. Github_code.ipynd -- Notebook with the code
+   1. Github_code.ipynb -- Notebook with the code
    2. Datasets used -- CHASE_Labeled.csv, general_ema.csv. Please download sensing.csv from https://www.kaggle.com/datasets/subigyanepal/college-experience-dataset
 
 ## Citing
