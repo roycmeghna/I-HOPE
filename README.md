@@ -65,9 +65,4 @@ The project follows a two-stage hierarchical model as shown below:
    1. Github_code.ipynb -- Notebook with the code
    2. Datasets used -- CHASE_Labeled.csv, general_ema.csv. Please download sensing.csv from https://www.kaggle.com/datasets/subigyanepal/college-experience-dataset
 
-## Citing
-  If you use any part of our code/concept, please cite us:
-```
-Meghna Roy Chowdhury, Wei Xuan, Shreyas Sen, Yixue Zhao, and Yi Ding. 2025. Predicting and Understanding College Student Mental Health with Interpretable Machine Learning. In ACM/IEEE International Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE ’25), June 24–26, 2025, New York, NY, USA. ACM, New York, NY, USA, 12 pages. https://doi.org/10.1145/3721201.3721372
 
-```
