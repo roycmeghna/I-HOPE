@@ -63,6 +63,9 @@ The project follows a two-stage hierarchical model as shown below:
 
 ## Files
    1. Github_code.ipynb -- Notebook with the code
-   2. Datasets used -- CHASE_Labeled.csv, general_ema.csv. Please download sensing.csv from https://www.kaggle.com/datasets/subigyanepal/college-experience-dataset
+   2. Csvs used --
+      (a) Initial dataset: Got after running Section 2(a) of https://github.com/bill-wei-xuan/Unlocking-MentalHealth/blob/main/notebooks/DigitalWellbeing.ipynb
+      (b) Manual labels : CHASE_Labeled.csv
+      All the original data can be downloaded from https://www.kaggle.com/datasets/subigyanepal/college-experience-dataset
 
 
